@@ -6,12 +6,12 @@ Library  SeleniumLibrary
 
 
 ***Variables***
-${input_name}           //*[@id="name"]
-${input_phone}          //*[@id="phone"]
-${input_email}          //*[@id="email"]
-${input_password}       //*[@id="password"]
-${textarea_adress}      //*[@id="address"]
-${button_submit}        /html/body/div/div[2]/div[2]/button/font
+${input_name}           id=name
+${input_phone}          id=phone
+${input_email}          id=email
+${input_password}       id=password
+${textarea_adress}      id=address
+${button_submit}        name:submit
 
 
 ***Keywords***
@@ -22,7 +22,7 @@ preencher campos
         Input Text      ${input_phone}      53984544760
         Input Text      ${input_email}      marciodalu@gmail.com
         Input Text      ${input_password}   123456
-        Input Text      ${input_adress}     Rua Dom Luis de Nadal 168  
+        Input Text      ${textarea_adress}     Rua Dom Luis de Nadal 168  
 clicar em submit
          Click Element   ${button_submit}
 fechar navegador
@@ -35,10 +35,4 @@ Cenario 1: Preencher Formulario
     clicar em submit
     fechar navegador
 
-Cenario 2:
-fechar navegador
-
-
-cenário 3: 
-visitar site
 
