@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.8.10 on linux)" generated="20220401 16:31:27.267" rpa="false" schemaversion="3">
+<suite id="s1" name="Form" source="/home/mmc/Robot/robot2/form.robot">
+<test id="s1-t1" name="Cenario 1: Preencher Formulario" line="32">
+<kw name="abrir navegador acessar site">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://itera-qa.azurewebsites.net/home/automation</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220401 16:31:28.170" level="INFO">Opening browser 'chrome' to base url 'https://itera-qa.azurewebsites.net/home/automation'.</msg>
+<status status="PASS" starttime="20220401 16:31:28.170" endtime="20220401 16:31:48.343"/>
+</kw>
+<status status="PASS" starttime="20220401 16:31:28.169" endtime="20220401 16:31:48.344"/>
+</kw>
+<kw name="preencher campos">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_name}</arg>
+<arg>Marcio Cardoso</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220401 16:31:48.358" level="INFO">Typing text 'Marcio Cardoso' into text field '//*[@id="name"]'.</msg>
+<status status="PASS" starttime="20220401 16:31:48.347" endtime="20220401 16:31:50.787"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_phone}</arg>
+<arg>53984544760</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220401 16:31:50.788" level="INFO">Typing text '53984544760' into text field '//*[@id="phone"]'.</msg>
+<status status="PASS" starttime="20220401 16:31:50.787" endtime="20220401 16:31:51.270"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_email}</arg>
+<arg>marciodalu@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220401 16:31:51.271" level="INFO">Typing text 'marciodalu@gmail.com' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20220401 16:31:51.271" endtime="20220401 16:31:51.423"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_password}</arg>
+<arg>123456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220401 16:31:51.424" level="INFO">Typing text '123456' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20220401 16:31:51.423" endtime="20220401 16:31:51.811"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_adress}</arg>
+<arg>Rua Dom Luis de Nadal 168</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220401 16:31:51.813" level="FAIL">Variable '${input_adress}' not found.</msg>
+<status status="FAIL" starttime="20220401 16:31:51.811" endtime="20220401 16:31:51.813"/>
+</kw>
+<status status="FAIL" starttime="20220401 16:31:48.346" endtime="20220401 16:31:51.814"/>
+</kw>
+<kw name="clicar em submit">
+<status status="NOT RUN" starttime="20220401 16:31:51.815" endtime="20220401 16:31:51.815"/>
+</kw>
+<kw name="fechar navegador">
+<status status="NOT RUN" starttime="20220401 16:31:51.815" endtime="20220401 16:31:51.815"/>
+</kw>
+<status status="FAIL" starttime="20220401 16:31:28.167" endtime="20220401 16:31:51.817">Variable '${input_adress}' not found.</status>
+</test>
+<test id="s1-t2" name="Cenario 2:" line="38">
+<status status="FAIL" starttime="20220401 16:31:51.818" endtime="20220401 16:31:51.821">Test contains no keywords.</status>
+</test>
+<test id="s1-t3" name="fechar navegador" line="39">
+<status status="FAIL" starttime="20220401 16:31:51.822" endtime="20220401 16:31:51.824">Test contains no keywords.</status>
+</test>
+<test id="s1-t4" name="cenário 3:" line="42">
+<status status="FAIL" starttime="20220401 16:31:51.825" endtime="20220401 16:31:51.827">Test contains no keywords.</status>
+</test>
+<test id="s1-t5" name="visitar site" line="43">
+<status status="FAIL" starttime="20220401 16:31:51.828" endtime="20220401 16:31:51.829">Test contains no keywords.</status>
+</test>
+<status status="FAIL" starttime="20220401 16:31:27.269" endtime="20220401 16:31:51.831"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="5" skip="0" id="s1" name="Form">Form</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
